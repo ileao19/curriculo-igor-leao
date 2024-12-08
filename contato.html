@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            alert("Enviado com sucesso!"); // Exibe a mensagem de sucesso
+            setTimeout(() => {
+                window.location.href = "index.html"; // Redireciona após 2 segundos
+            }, 2000);
+        }
+    </script>
 </head>
 <body>
     <!-- Menu de navegação, visível em todas as páginas -->
@@ -24,7 +33,7 @@
         <section>
             <h1>Entre em Contato</h1>
             <p>Preencha o formulário abaixo para entrar em contato comigo:</p>
-            <form action="#" method="post">
+            <form onsubmit="enviarFormulario(event)">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
