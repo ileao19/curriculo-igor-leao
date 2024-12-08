@@ -1,0 +1,69 @@
+/* Reset básico */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* Estilo do menu */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Estilo para o layout da página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Garantir que o conteúdo ocupe o espaço disponível */
+main {
+    flex: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno no topo e na base */
+    margin-top: auto; /* Garante que o rodapé seja empurrado para o final da página */
+    font-size: 14px; /* Tamanho do texto */
+}
